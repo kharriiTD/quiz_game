@@ -22,13 +22,15 @@ def new_game():
         print(key)
         for i in options[question_num-1]:
             print(i)
-        guess = input("Enter A, B, C, or D: ")
+        guess = input("Enter A, B, or C ")
         guess = guess.upper()
         guesses.append(guess)
 
         correct_guesses += check_answer(question.get(key), guess)
         question_num += 1
-
+        print(f'Your Score Was {correct_guesses}')
+        print("Thank you for playing. Welcome back.")
+# print(correct_guesses)
 
 # Check answer see if is correct or wrong.
 
@@ -38,7 +40,7 @@ def check_answer(answer, guess):
         print("Correct, good job!")
         return 1
     else:
-        print("Wrong answer. Correct answer is ")
+        print("Wrong answer.")
         return 0
 
 question = {
@@ -62,7 +64,7 @@ options = [["A. 22 month", "B. 24 month", "C. 18 month"],
            ["A. Four", "B. Six", "C. Five"],
            ["A. Bee", "B. Ladybug", "C. Butterfly"],
            ["A. A family", "B. A stuff", "C. An army"],
-           ["A. Three", "B. Five", "C. 18 One"],
+           ["A. Three", "B. Five", "C. One"],
            ["A. Two", "B. Four", "C. Six"]]
 
 new_game()

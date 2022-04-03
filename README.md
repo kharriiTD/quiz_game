@@ -31,8 +31,9 @@ I cuold'nt implement the correct answer after each question.
 
 
 ## Remaining Bugs 
+I cuoldnt print out the totalt result in the end. 
 
-Validator Testing 
+## Validator Testing 
 
 - PEP8
 
