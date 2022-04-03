@@ -21,17 +21,17 @@ In the end the player will know how many correct answers he/she has.
 ## Testing 
 
 I have manually tested this project by doing the following: 
- - Passed the code through a PEP8 liner and confirmed that there are no problems. 
+ - Passed the code through a PEP8 liner . 
  - Given invalid inputs: string when numbers are expected.
  - Tested in my local terminal and the Code Institute Heroku terminal. 
 
 
 ## Bugs
-I cuold'nt implement the correct answer after each question. 
+
 
 
 ## Remaining Bugs 
-I cuoldnt print out the totalt result in the end. 
+
 
 ## Validator Testing 
 
