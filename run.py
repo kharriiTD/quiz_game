@@ -1,16 +1,50 @@
-
 # function in the game 
+print("welcome to Animal Ques Game!")
+name = input("Whats you name?")
+player = input( "Hi "+ name +". Do you want to play?")
+
+if player.lower()!="yes":
+   print("Come back when you feel like playing. Take care.")
+   quit()
+else:
+   print("Let's play, good luck " + name + "!")
+
 
 def new_game():
-   pass 
-def check_answer():
-   pass  
-def display_score():
-   pass 
-def play_agian():
-   pass
 
-#questions
+    guesses = []
+    correct_guesses = 0
+    question_num = 1
+
+    for key in question:
+        print(" ")
+        print(key)
+        for i in options[question_num-1]:
+            print(i)
+        guess = input("Enter A, B, C, or D: ")
+        guess = guess.upper()
+        guesses.append(guess)
+
+        correct_guesses += check_answer(question.get(key), guess)
+        question_num += 1
+
+    
+print("You got" + correct_guesses + "correct")
+
+      
+      
+
+# Check answer see if is correct or wrong.
+def check_answer(answer, guess):
+
+    if answer == guess:
+        print("Correct, good job!")
+        return 1
+    else:
+        print("Wrong answer. Correct answer is "+ question.get(key))
+        return 0
+
+
 
 question = {
    "How long is the gestation period of an African elephant?:": "A",
@@ -35,3 +69,5 @@ options = [["A. 22 month", "B. 24 month", "C. 18 month"],
            ["A. A family", "B. A stuff", "C. An army"],
            ["A. Three", "B. Five", "C. 18 One"],
            ["A. Two", "B. Four", "C. Six"]]
+
+new_game()
