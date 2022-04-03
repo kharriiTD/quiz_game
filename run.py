@@ -1,6 +1,12 @@
-print("Welcome to my quiz game! ")
 
-player = input(" Do you want to play? ")
-if player != "yes" :
-   quit()
-   
+# function in the game 
+
+def new_game():
+   pass 
+def check_answer():
+   pass  
+def display_score():
+   pass 
+def play_agian():
+   pass
+
