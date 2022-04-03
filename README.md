@@ -1,31 +1,65 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Animal Quiz Game 
 
-Welcome kharriiTD,
+## How to play? 
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+10 questions will be displayed and the player answers by picking A, b or C. 
+In the end the player will know how many correct answers he/she has. 
 
-## Reminders
+## Features 
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## Existing Features 
 
-## Creating the Heroku app
+- The user can see the question and have 3 alternatives to pick 
+- The user can see the scores at the end of the game
+- The user will get 10 questions 
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Future Features 
+- Allow to use to pick different levels
+- Allow user to pick 10 or 20 questions 
+- Allow user to pick different topics
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## Testing 
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+I have manually tested this project by doing the following: 
+ - Passed the code through a PEP8 liner and confirmed that there are no problems. 
+ - Given invalid inputs: string when numbers are expected.
+ - Tested in my local terminal and the Code Institute Heroku terminal. 
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
 
-Connect your GitHub repository and deploy as normal.
+## Bugs
+I cuold'nt implement the correct answer after each question. 
 
-## Constraints
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Remaining Bugs 
 
------
-Happy coding!
+Validator Testing 
+
+- PEP8
+
+## Deployment
+
+This project was deployed by using Code Institutes mock terminal for Heroku.
+- Steps for deployment: 
+- Fork or clone this repository
+- Create a new Heroku app 
+- Set the buildbacks to Python and NodeJS in that order 
+- Link the Heroku app to the repository 
+-Click on Deploy
+
+## Credits 
+
+I toke code from 
+https://www.youtube.com/watch?v=yriw5Zh406s
+
+I also look and searched around in stackoverflow.
+For my readme file i use code institute templates.
+I got help from tutor Assistance to print out the score in the end of the game. 
+ 
+
+https://pyseek.blogspot.com/2022/01/quiz-game-in-python.html
+
+I toke the questions from: 
+
+https://www.opinionstage.com/blog/trivia-questions/
+https://parade.com/1247897/marynliles/animal-trivia/
+

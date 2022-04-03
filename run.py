@@ -1,13 +1,14 @@
-# function in the game 
+# welcome texts
+
 print("welcome to Animal Ques Game!")
 name = input("Whats you name?")
-player = input( "Hi "+ name +". Do you want to play?")
+player = input("Hi " + name + ". Do you want to play?")
 
-if player.lower()!="yes":
-   print("Come back when you feel like playing. Take care.")
-   quit()
+if player.lower() != "yes":
+    print ("Come back when you feel like playing. Take care.")
+    quit()
 else:
-   print("Let's play, good luck " + name + "!")
+    print ("Let's play, good luck " + name + "!")
 
 
 def new_game():
@@ -28,23 +29,17 @@ def new_game():
         correct_guesses += check_answer(question.get(key), guess)
         question_num += 1
 
-    
-print("You got" + correct_guesses + "correct")
-
-      
-      
 
 # Check answer see if is correct or wrong.
+
 def check_answer(answer, guess):
 
     if answer == guess:
         print("Correct, good job!")
         return 1
     else:
-        print("Wrong answer. Correct answer is "+ question.get(key))
+        print("Wrong answer. Correct answer is ")
         return 0
-
-
 
 question = {
    "How long is the gestation period of an African elephant?:": "A",
