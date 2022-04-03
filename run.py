@@ -1,8 +1,8 @@
 # welcome texts
 
 print("welcome to Animal Ques Game!")
-name = input("Whats you name?")
-player = input("Hi " + name + ". Do you want to play? Yes or No")
+name = input("Whats you name?: ")
+player = input("Hi " + name + ". Do you want to play? Yes or No: ")
 
 if player.lower() != "yes":
     print ("Come back when you feel like playing. Take care.")
@@ -28,7 +28,7 @@ def new_game():
 
         correct_guesses += check_answer(question.get(key), guess)
         question_num += 1
-        print(f'Your Score Was {correct_guesses}')
+        print(f'Your Score Is {correct_guesses}')
 
 
 # print(correct_guesses)
